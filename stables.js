@@ -34,3 +34,6 @@ let latePaymentMessage = "Your monthly payement for " + cacharel.name + " is lat
 console.log(welcomeMessage + latePaymentMessage)
 
 console.log(tonerre.feeLatePayment())
+
+
+//a
