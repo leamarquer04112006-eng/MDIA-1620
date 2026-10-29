@@ -9,10 +9,10 @@ let cacharel = {
     age: 8,
     favoriteSnack: "apples",
     monthlyRent: 1000,
-    location: false,
+    inside: false,
     color: "grey", 
     breed: "Arabian",
-    food: false,
+    hungry: false,
     feeLatePayment: 1000 * lateFee,
 }
 
@@ -22,10 +22,10 @@ let noisette ={
     age: 4,
     favoriteSnack: "chocolate",
     monthlyRent: 1500,
-    location: false,
+    inside: false,
     color: "black", 
     breed: "Thoroughbred",
-    food: true,
+    hungry: true,
     feeLatePayment: 1500 * lateFee,
 }
 
@@ -35,10 +35,10 @@ let tonerre = {
     age: 13,
     favoriteSnack: "carots",
     monthlyRent: 2000,
-    location: true,
+    inside: true,
     color: "white", 
     breed: "Andalusian",
-    food: false,
+    hungry: false,
     feeLatePayment: 2000 * lateFee,
 
 }
@@ -62,10 +62,10 @@ let libellule ={
     age: 6,
     favoriteSnack: "Humus",
     monthlyRent: 1500,
-    location: true,
+    inside: true,
     color: "brown", 
     breed: "Thoroughbred",
-    food: true,
+    hungry: true,
     feeLatePayment: 1500 * lateFee,
     
 }
@@ -92,13 +92,12 @@ if (horses.food === true) {
 
 
 
-let totalStalls = 10;
 
-function logAvailableStalls(horse) {
-    console.log("Available stalls: " + (totalStalls - horses));
+function logAvailableStalls(numberOfStable, currentNumberOfHorses) {
+    console.log("Available stables: " + (numberOfStables - currentNumberOfHorses));
 }
 
-logAvailableStalls(horses.length);
+logAvailableStables(10,horses.length);
 
 function logLatePayment(horse) {
     console.log(
